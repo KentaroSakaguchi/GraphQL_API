@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/KentaroSakaguchi/GraphQL_API/issues"
   },
-  "homepage": "https://github.com/KentaroSakaguchi/GraphQL_API#readme"
+  "homepage": "https://github.com/KentaroSakaguchi/GraphQL_API#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  }
 }

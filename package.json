@@ -10,8 +10,10 @@
     "codegen": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
+    "@prisma/client": "^3.11.0",
     "apollo-server": "^3.6.5",
-    "graphql": "^15.8.0"
+    "graphql": "^15.8.0",
+    "prisma": "^3.11.0"
   },
   "repository": {
     "type": "git",

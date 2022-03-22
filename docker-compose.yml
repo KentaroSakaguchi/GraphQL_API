@@ -1,15 +1,14 @@
-version: '3'
-
+version: '3.8'
 services:
-  docker-jupyter-lab:
-    container_name: graphQL_API
-    build:
-      context: .
-      dockerfile: Dockerfile
-    command: npx ts-node server.ts
-    tty: true
-    working_dir: '/usr/src/app/'
+  postgres:
+    image: postgres:10.3
+    restart: always
+    environment:
+      - POSTGRES_USER=eringiv3
+      - POSTGRES_PASSWORD=password
     volumes:
-      - ./app:/usr/src/app/
+      - postgres:/var/lib/postgresql/data
     ports:
-      - '8080:8080'
+      - '5432:5432'
+volumes:
+  postgres:
